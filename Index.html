@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SCTCE — Modern Redesign</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Hero Section -->
+  <header class="bg-cover bg-center" style="background-image:url('campus.jpg');">
+    <div class="bg-black bg-opacity-40 py-24">
+      <div class="max-w-4xl mx-auto text-center text-white px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Sree Chitra Thirunal College of Engineering</h1>
+        <p class="text-lg md:text-2xl mb-6">Established 1995 • Government-sponsored • Affiliated to KTU</p>
+        <a href="#admissions" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition">Admissions 2025</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-sm sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <a href="#" class="text-2xl font-bold">SCTCE</a>
+      <ul class="hidden md:flex gap-6 font-medium">
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#programs" class="hover:text-blue-600">Programs</a></li>
+        <li><a href="#facilities" class="hover:text-blue-600">Facilities</a></li>
+        <li><a href="#news" class="hover:text-blue-600">News</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-xl" id="menu-toggle">☰</button>
+    </div>
+    <div class="md:hidden" id="mobile-menu" style="display:none;">
+      <ul class="flex flex-col gap-2 px-4 pb-4">
+        <li><a href="#about" class="block py-2 hover:bg-gray-100 rounded">About</a></li>
+        <li><a href="#programs" class="block py-2 hover:bg-gray-100 rounded">Programs</a></li>
+        <li><a href="#facilities" class="block py-2 hover:bg-gray-100 rounded">Facilities</a></li>
+        <li><a href="#news" class="block py-2 hover:bg-gray-100 rounded">News</a></li>
+        <li><a href="#contact" class="block py-2 hover:bg-gray-100 rounded">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    document.getElementById('menu-toggle').onclick = () => {
+      const mm = document.getElementById('mobile-menu');
+      mm.style.display = mm.style.display === 'none' || !mm.style.display ? 'block' : 'none';
+    };
+  </script>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-5xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Vision & Mission</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="font-semibold text-xl mb-2">Vision</h3>
+        <p>To become an institution renowned for producing professionally capable and socially responsible engineers.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-xl mb-2">Mission</h3>
+        <p>Create a learning environment that encourages analytical thinking, teamwork, entrepreneurship, and ethical values to prepare students for successful careers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-5xl mx-auto text-center mb-8">
+      <h2 class="text-3xl font-semibold">Programs Offered</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow"><h3 class="font-semibold mb-2">B.Tech – Computer Science & Engineering</h3></div>
+      <div class="bg-white p-6 rounded-lg shadow"><h3 class="font-semibold mb-2">B.Tech – AI & Machine Learning</h3></div>
+      <div class="bg-white p-6 rounded-lg shadow"><h3 class="font-semibold mb-2">B.Tech – Mechanical Engineering</h3></div>
+      <!-- ... more cards -->
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="max-w-5xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-semibold text-center mb-8">Facilities</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <div class="bg-white p-4 rounded-lg text-center shadow">
+        <div class="text-4xl">🖥️</div>
+        <p class="mt-2 font-medium">Central Computing Facility</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg text-center shadow">
+        <div class="text-4xl">📚</div>
+        <p class="mt-2 font-medium">Library</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg text-center shadow">
+        <div class="text-4xl">🏠</div>
+        <p class="mt-2 font-medium">Hostel</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg text-center shadow">
+        <div class="text-4xl">🤝</div>
+        <p class="mt-2 font-medium">Clubs & IEDC</p>
+      </div>
+      <!-- more facilities as needed -->
+    </div>
+  </section>
+
+  <!-- News & Updates Section -->
+  <section id="news" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6 text-center">News & Updates</h2>
+      <ul class="space-y-4">
+        <li class="bg-white p-4 rounded-lg shadow">
+          <strong>Admissions Open:</strong> Apply for B.Tech & M.Tech programs for 2025.
+        </li>
+        <li class="bg-white p-4 rounded-lg shadow">
+          <strong>Upcoming:</strong> IEEE WIECON ECE 2023 — Date announced!
+        </li>
+        <!-- dynamically update based on real data -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact" class="bg-blue-800 text-white py-8 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+      <p>📍 Pappanamcode, Thiruvananthapuram – 695018 &nbsp;|&nbsp; ☎ +91-471-2490572 &nbsp;|&nbsp; ✉ principal@sctce.ac.in</p>
+      <p class="mt-4">Affiliations & Accreditations: KTU • AICTE • NBA • TEQIP</p>
+    </div>
+  </footer>
+</body>
+</html>
