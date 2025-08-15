@@ -1,40 +1,119 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>SCTCE — Modern Redesign</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCT College of Engineering - Redesign</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7f9fc;
+        color: #333;
+    }
+    header {
+        background: linear-gradient(90deg, #004080, #0066cc);
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    nav {
+        background: #003366;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0.5rem 1rem;
+        font-weight: bold;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    section {
+        max-width: 1000px;
+        margin: auto;
+        padding: 2rem;
+        background: white;
+        border-radius: 8px;
+        margin-top: 1.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+        color: #004080;
+        margin-top: 0;
+    }
+    footer {
+        background: #003366;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+</style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-  <!-- Hero Section -->
-  <header class="bg-cover bg-center" style="background-image:url('campus.jpg');">
-    <div class="bg-black bg-opacity-40 py-24">
-      <div class="max-w-4xl mx-auto text-center text-white px-4">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Sree Chitra Thirunal College of Engineering</h1>
-        <p class="text-lg md:text-2xl mb-6">Established 1995 • Government-sponsored • Affiliated to KTU</p>
-        <a href="#admissions" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition">Admissions 2025</a>
-      </div>
-    </div>
-  </header>
+<header>
+    <h1>SCT College of Engineering</h1>
+    <p>Autonomous Institution under APJ Abdul Kalam Technological University</p>
+</header>
 
-  <!-- Navbar -->
-  <nav class="bg-white shadow-sm sticky top-0 z-20">
-    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
-      <a href="#" class="text-2xl font-bold">SCTCE</a>
-      <ul class="hidden md:flex gap-6 font-medium">
-        <li><a href="#about" class="hover:text-blue-600">About</a></li>
-        <li><a href="#programs" class="hover:text-blue-600">Programs</a></li>
-        <li><a href="#facilities" class="hover:text-blue-600">Facilities</a></li>
-        <li><a href="#news" class="hover:text-blue-600">News</a></li>
-        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
-      </ul>
-      <button class="md:hidden text-xl" id="menu-toggle">☰</button>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Departments</a>
+    <a href="#">Academics</a>
+    <a href="#">Admissions</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section>
+    <h2>About SCTCE</h2>
+    <p>Sree Chitra Thirunal College of Engineering (SCTCE) is one of Kerala’s premier engineering institutions, known for academic excellence, innovation, and student-driven initiatives. Established in 1995, it has grown into a hub for technical learning and research.</p>
+</section>
+
+<section>
+    <h2>Vision</h2>
+    <p>To be a centre of excellence in engineering education, research, and innovation, fostering socially responsible technocrats.</p>
+
+    <h2>Mission</h2>
+    <ul>
+        <li>Provide quality technical education aligned with industry needs.</li>
+        <li>Encourage innovation, entrepreneurship, and research culture.</li>
+        <li>Develop leadership and ethical values among students.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Departments</h2>
+    <ul>
+        <li>Computer Science & Engineering</li>
+        <li>Electronics & Communication Engineering</li>
+        <li>Mechanical Engineering</li>
+        <li>Electrical & Electronics Engineering</li>
+        <li>Civil Engineering</li>
+    </ul>
+</section>
+
+<section>
+    <h2>News & Updates</h2>
+    <ul>
+        <li>Admissions 2025 - Apply Now!</li>
+        <li>Placement Drive 2025 - Record-breaking offers.</li>
+        <li>Tech Fest 'Innovista' scheduled for October.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 SCT College of Engineering. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>      <button class="md:hidden text-xl" id="menu-toggle">☰</button>
     </div>
     <div class="md:hidden" id="mobile-menu" style="display:none;">
       <ul class="flex flex-col gap-2 px-4 pb-4">
